@@ -1,0 +1,14 @@
+.products{
+    min-height: 50vh;
+}
+.vertical-line{
+    min-height: 100%;
+    max-width: 1px;
+    padding: 0px;
+    margin: 0px;
+    background-color: red;
+}
+
+.stock-status{
+    align-self: flex-end;
+}

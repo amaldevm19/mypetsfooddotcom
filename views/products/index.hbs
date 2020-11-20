@@ -1,0 +1,55 @@
+<link rel='stylesheet' href='/stylesheets/products.css' />
+<div class="row products mt-5">
+    <div class="col-sm-12 col-md-3 text-center">
+        <h5>Filter Products</h5>
+    </div>
+    <div class="col-md-9 text-center">
+        <h3>ALL PRODUCTS</h3>
+        {{year}}
+        <div class="row row-cols-1 row-cols-md-3 best-buy-card p-0 m-0 justify-content-right">
+            {{#each products}}
+            <div class="col mb-5 mt-5 ">
+                <div class="card ">
+                    {{#if this.in_stock}}
+                        <div class="bg-success text-white p-1 stock-status"><p class="p-0 m-0">In stock</p></div>
+                    {{else}}
+                        <div class="bg-danger text-white p-1 stock-status"><p class="p-0 m-0">Out of stock</p></div>
+                    {{/if}}
+                    <img src="{{this.thumbnail}}" class="card-img-top" alt="dog">
+                    <div class="card-body">
+                        <div class="row">
+                            <a class="text-center"  href="#">{{this.name}}</a>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-12 rating text-center">
+                                <a href="#" ><i class="fas fa-heart" style="color: #f42121;"></i></a>
+                                <a href="#" ><i class="fas fa-heart" style="color: #f42121;"></i></a>
+                                <a href="#" ><i class="fas fa-heart" style="color: #f42121;"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 add"><a href="#"><i class="fas fa-arrow-circle-up" style="color: #f47221;"></i></a></div>
+                            <div class="col-6 qty"><p>10</p></div>
+                            <div class="col-3 deduct"><a href="#"><i class="fas fa-arrow-circle-down" style="color: #f47221;"></i></a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center price">
+                                AED:50.00
+                            </div>
+                            <div class="col-12 bg-success text-white p-2 text-center add-to-cart">
+                                Add to cart
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+    </div>
+</div>
+
+
+
+

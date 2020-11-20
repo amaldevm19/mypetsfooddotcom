@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color: rgb(243, 235, 235);
+}
+.row{
+  margin: 0 !important;
+}
+.info-css{
+  background: #f47221;
+  color: white;
+}
+.main-card .card{
+  width:300px;
+  align-items:center
+}
+/* .header-css{
+ 
+}
+.navbar-css {
+  
+} */
+
+.main-card a {
+  position: relative;
+  color: #f47221;
+  text-decoration: none !important;
+  font-size: large;
+}
+
+.main-card a:hover {
+  color: #f47221;
+}
+.main-card a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f47221;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.main-card a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.best-buy{
+  color: #f47221;
+  font-size: 20pt;
+  font-weight: 1000;
+  text-decoration: underline #f47221;
+}
+.best-buy-card .card{
+  width:auto;
+  align-items:center
+}
+.qty{
+  text-align: center;
+}
+.add{
+  text-align: center;
+}
+.deduct{
+  text-align: center;
+}
+.add-to-cart:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px green;
+}
+.price{
+  
+  color: #f47221;
+  font-weight: 900;
+  font-size: large;
+}
+footer{
+  background-color: #f47221;
+}
