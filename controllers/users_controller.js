@@ -1,7 +1,7 @@
 const express = require('express');
 var session = require('express-session');
 const Users = require('../models/users_model');
-const db = require('../config/atlas_db_config');
+const db = require('../config/db_config');
 
 const users_controller ={
     login_view :(req,res, next)=>{
